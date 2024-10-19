@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Row Span Table</h1>
+    <table border="1">
+
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>Branch</th>
+            <th>Phone No.</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Divya</td>
+            <td>101</td>
+            <td>ECC</td>
+            <td>12345678</td>
+        </tr>
+        <tr>
+            <!-- <td>Kirti</td> -->
+            <td>104</td>
+            <td rowspan="2">CSE</td>
+            <td>12345678</td>
+        </tr>
+        <tr>
+            <td>Anjali</td>
+            <td>101</td>
+            <!-- <td>IT</td> -->
+            <td>123456789</td>
+        </tr>
+        <tr>
+            <td>Aisha</td>
+            <td>101</td>
+            <td>Mec</td>
+            <td>12345678</td>
+        </tr>
+
+    </table><br><br>
+
+    <h1>Col Span Table</h1>
+    <table border="1">
+
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>Branch</th>
+            <th>Phone No.</th>
+        </tr>
+        <tr>
+            <td>Divya</td>
+            <td colspan="2">101</td>
+            <td>ECC</td>
+            <!-- <td>12345678</td> -->
+        </tr>
+        <tr>
+            <td>Kirti</td>
+            <td>104</td>
+            <td>CSE</td>
+            <td>12345678</td>
+        </tr>
+        <tr>
+            <td>Anjali</td>
+            <td>101</td>
+            <td>IT</td>
+            <td>123456789</td>
+        </tr>
+        <tr>
+            <td colspan="3">Aisha</td>
+            <!-- <td>101</td> -->
+            <!-- <td>Mec</td> -->
+            <td>12345678</td>
+        </tr>
+
+    </table><br><br>
+
+    <table border="1">
+        <tr>
+            <td colspan="4" style = "text-align: center;">New Employee Records</td>
+            <!-- <td>d</td> -->
+            <!-- <td>a</td> -->
+            <!-- <td>b</td> -->
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Jobs</th>
+            <!-- <th>Work</th> -->
+            <th>Working Experience</th>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>Software Engineer</td>
+            <td>Data Analyst</td>
+            <td rowspan="2">5 Years</td>
+        </tr>
+        <tr>
+            <td>Ale</td>
+            <td colspan="2">Senior Web Developer</td>
+            <!-- <td>Data Analyst</td> -->
+            <!-- <td>5 Years</td> -->
+        </tr>
+        <tr>
+            <td>Jack</td>
+            <td>Junior Tech Writer</td>
+            <td>Blogger</td>
+            <td>6 Months</td>
+        </tr>
+
+    </table>
+
+
+    
+</body>
+</html>
