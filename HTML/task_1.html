@@ -1,36 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    nav{
+    nav {
         /* border:2px solid red; */
         display: flex;
-        padding: 15px 20px;
+        padding: 15px 0px;
+        justify-content: space-between;
     }
-    .logo{
-        width:30%;
+
+    .logo {
+        width: 30%;
+        height: 50px;
         /* border:2px solid black; */
+        margin: 0px 10px;
+        padding-left: 50px;
+    }
+
+    .logo img {
+        width: 150px;
+        height: 50px;
+    }
+
+    .search {
+        width: 40%;
+        /* border:2px solid black; */
+        text-align: center;
+        padding-top: 5px;
+        /* padding-left: 200px; */
         margin: 10px 10px;
     }
-    .search{
-        width:40%;
+
+    .links {
+        width: 40%;
         /* border:2px solid black; */
         text-align: center;
         padding-top: 5px;
         margin: 10px 10px;
     }
-    .links{
-        width:40%;
-        /* border:2px solid black; */
-        text-align: center;
-        padding-top: 5px;
-        margin: 10px 10px;
+
+    .links a {
+        color: blue;
+        padding-left: 10px;
+    }
+
+    .search input {
+        padding: 5px 60px;
+    }
+
+    .search button {
+        padding: 5px 10px;
+        font-weight: bolder;
+    }
+
+    .content {
+        width: 90%;
+        display: flex;
+        margin: auto 60px;
+        /* border:2px solid red; */
+    }
+
+    .left-content {
+        width: 80%;
+        padding: 0px 40px;
+        /* border: 2px solid blue; */
+    }
+
+    .left-content ul li {
+        padding-top: 10px;
+    }
+
+    .box {
+        width: 90%;
+        height: 30px;
+        margin-left: 30px;
+        padding-top: 10px;
+        padding-left: 30px;
+        border: 0.1px solid black;
+    }
+
+    .box a {
+        color: blue;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px;
+    }
+
+    .right-content {
+        width: 25%;
+        height: 300px;
+        margin-top: 13px;
+        /* margin-left: 50px; */
+        padding-left: 30px;
+        /* border: 2px solid black; */
+    }
+
+    .right-content .heading {
+        width: 50%;
+        display: flex;
+        margin-right: 30px;
+        /* border: 2px solid black; */
+    }
+
+    .right-content .heading button {
+        width: 50%;
+        height: 20px;
+        margin-top: 17px;
+        margin-left: 30px;
+        /* border: 2px solid black; */
+
     }
 </style>
+
 <body>
     <nav>
         <div class="logo">
@@ -41,12 +127,79 @@
             <button>Search</button>
         </div>
         <div class="links">
-            <a href="#">Donate</a>
-            <a href="#">Create Account</a>
-            <a href="#">Login</a>
+            <a href="https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=IN&uselang=en&wmf_medium=sidebar&wmf_source=donate&wmf_campaign=C13_en.wikipedia.org" target="_blank">Donate</a>
+            <a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Wikipedia%3ATemplates" target="_blank">Create Account</a>
+            <a href="https://en.wikipedia.org/w/index.php?returnto=Wikipedia%3ATemplates&title=Special:UserLogin&centralAuthAutologinTried=1&centralAuthError=Not+centrally+logged+in" target="_blank">Login</a>
         </div>
     </nav>
-    <div>
-        <h1>Wikipedia Templates</h1><hr>
+    <div class="content">
+        <div class="left-content">
+            <h1>Wikipedia:Templates</h1>
+            <hr>
+            <a href="task_1.html" style="color: black;">Project</a>
+            <a href="https://en.wikipedia.org/wiki/Wikipedia_talk:Templates" target="_blank" style="color: blue;">Talk</a>
+            <hr>
+            <p>From Wikipedia, the free encyclopedia</p>
+            <div class="box">
+                <a href="#">Abbrevations</a>
+                <a href="#">Edit summaries</a>
+                <a href="#">Glossary</a>
+                <a href="#">HTML</a>
+                <a href="#">Shortcuts</a>
+                <a href="#"><span>Templates</span></a>
+                <a href="#">Wikitext</a>
+                <a href="#">Directory</a>
+            </div>
+            <p><span style="font-weight: bold;">Templates </span>are pages that are embedded (transcluded) into other
+                pages to allow for the repetition of information.</p>
+            <ul type="square">
+                <li> <span style="color: blue;">Help:A quick guide to templates,</span> a brief introduction on
+                    templates for beginners.</li>
+                <li> <span style="color: blue;">Help:Template,</span> the main technical help page on templates,
+                    provides information on creating & using templates.</li>
+                <li> <span style="color: blue;">Wikipedia:Template namespace,</span>guidelines and tips for use of
+                    templates.</li>
+                <li> <span style="color: blue;">Wikipedia:WikiProject Templates,</span> the WikiProject that looks after
+                    template-related issues.</li>
+                <li> <span style="color: blue;">Wikipedia:Template index,</span> an index of all standard templates used
+                    on Wikipedia, grouped into topic-specific.
+                    <ul type="square">
+                        <li><span style="color: blue;">Wikipedia:Navigation templates,</span>templates that link between
+                            multiple articles belonging to the same topic.</li>
+                        <li><span style="color: blue;">Wikipedia:List of infoboxes </span>for infoboxes, which are small
+                            panels that summarize key features.</li>
+                        <li><span style="color: blue;">Wikipedia:Navigation templates,</span>templates that link between
+                            multiple articles belonging to the same topic.</li>
+                    </ul>
+                </li>
+
+                <li><span style="color: blue;">Wikipedia:Requested templates</span>, to request creation of a template.</li>
+                <li> <span style="color: blue;">Category:Wikipedia templates.</span></li>
+                <li> <span style="color: blue;">Special:ExpandTemplates,</span>expands all templates recursively.</li>
+            </ul>
+            <p>Use this form to search in the Template: or Template_talk: namespaces. See <span style="color: blue;"> Help:Searching </span>for more information.</p>
+        </div>
+        <div class="right-content">
+            <div class="heading">
+                <h3>Appearance</h3>
+                <button>hide</button>
+            </div>
+            <hr>
+            <p>Text</p>
+            <hr>
+            <input type="radio" name="size" id="gender">Small <br>
+            <input type="radio" name="size" id="gender">Standard <br>
+            <input type="radio" name="size" id="gender">Large <br>
+            <hr>
+            <p>Width</p>
+            <input type="radio" name="size" id="gender">Standard <br>
+            <input type="radio" name="size" id="gender">Wide <br>
+            <hr>
+            <p>Color (beta)</p>
+            <input type="radio" name="color" id="gender">Automatic <br>
+            <input type="radio" name="color" id="gender">Light <br>
+            <input type="radio" name="color" id="gender">Dark <br>
+
+        </div>
     </div>
 </body>
